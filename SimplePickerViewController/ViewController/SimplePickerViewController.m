@@ -39,7 +39,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     
-    pickerArray = [[NSArray alloc]initWithObjects:@"Item 1",@"Item 2",@"Item 3",@"Item 4",@"Item 5",@"Item 6",@"Item 7",@"Item 8",@"Item 9",@"Item 10",@"Item 11",@"Item 12",@"Item 13",@"Item 14",@"Item 15",@"Item 16",@"Item 17",@"Item 18",@"Item 19",@"Item 20", nil];
+    pickerArray = [[NSArray alloc]initWithObjects:@"Item 1",@"Item 2",@"Item 3",@"Item 4",@"Item 5",@"Item 6",@"Item 7",@"Item 8",@"Item 9",@"Item 10",@"Item 11",@"Item 12",@"Item 13",@"Item 14",@"Item 15",@"Item 16",@"Item 17",@"Item 18",@"Item 19",@"Item 20",@"Item 21",@"Item 22",@"Item 23",@"Item 24",@"Item 25", nil];
    
     [_lblPickerResult setText:@"Result in here !"];
     [_btnPicker setTitle:@"Click to Choose" forState:UIControlStateNormal];
@@ -49,7 +49,7 @@
     
     [doneView.btnDone addTarget:self action:@selector(dismissPicker) forControlEvents:UIControlEventTouchUpInside];
     
-    _picker_view = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
+    _picker_view = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100.0f)];
     [_picker_view setDelegate:self];
     [_picker_view setDataSource:self];
     [_picker_view setBackgroundColor:[UIColor whiteColor]];
